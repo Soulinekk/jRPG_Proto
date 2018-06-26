@@ -9,8 +9,7 @@ namespace JRPG_Game
 
         public class FieldsInfoContainer : MonoBehaviour
         {
-
-            public List<FieldInfo> fields = new List<FieldInfo>();
+            
 
         }
 
@@ -22,7 +21,12 @@ namespace JRPG_Game
             /// <summary>
             /// X, Y position of field.
             /// </summary>
-            public Vector2 coordinates;
+            public Vector3 coordinates;
+
+            /// <summary>
+            /// 0 - Middle upper field, rest go clockwise.
+            /// </summary>
+            public int[] neighbors;
 
             /// <summary>
             /// 
@@ -33,6 +37,7 @@ namespace JRPG_Game
                 pavement,
                 forest
             }
+            public Type type;
 
             /// <summary>
             /// List of enemies possible to spawn on this field, its spawn chance, and strength multiplier.
