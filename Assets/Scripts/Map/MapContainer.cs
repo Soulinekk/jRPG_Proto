@@ -13,7 +13,7 @@ namespace JRPG_Game
             
             public Dictionary<int[], FieldInfo> mapChunks = new Dictionary<int[], FieldInfo>();
 
-    private void Awake()
+            private void Awake()
             {
                 if (instance == null)
                     instance = this;

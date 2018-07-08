@@ -24,18 +24,13 @@ namespace JRPG_Game
             public Vector3 coordinates;
 
             /// <summary>
-            /// 0 - Middle upper field, rest go clockwise.
-            /// </summary>
-            public int[] neighbors;
-
-            /// <summary>
             /// 
             /// </summary>
             public enum Type
             {
-                grass,
-                pavement,
-                forest
+                grass = 0,
+                pavement = 1,
+                forest = 2
             }
             public Type type;
 
